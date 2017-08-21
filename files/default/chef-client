@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pushd /home/chef > /dev/null
+/opt/chefdk/bin/chef-client -j /home/chef/config.json $*
+popd > /dev/null
